@@ -1,23 +1,238 @@
+body {
+    font-family: "Montserrat";
+}
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 1.25;
+}
+
+p {
+    color: rgb(53, 53, 53);
+}
+
 #title {
     background-color: #ff4c68;
+    color: white;
     padding: 0;
+    max-height: 700px;
+}
+
+/* Nav Bar */
+
+.container-fluid {
+    padding: 3% 15%;
+    position:static;
 }
 
 .container, .container-lg, .container-md, .container-sm {
     background-color: none;
     max-width: 100%;
     width: 100%;
-   
+    padding: 3% 0 3% 0;
 }
 
-.nav-link {
+/* Hero Section */
+
+.fs-4 {
+    font-family: "Ubuntu";
+}
+
+.nav-link, .pricing-heading p,  .card-body p {
     color:white;
 }
 
-.hero-heading {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 3rem;
-    line-height: 1.5;
+.hero-btn {
+    margin: 2rem 0.25rem;
 }
 
+i {
+    margin-right: 10px;
+}
+
+/* .hero-title-container {
+    position:static;
+    z-index: 2;
+} */
+
+.hero-img-container {
+    text-align: center;
+    padding-top: 4rem;
+
+}
+
+.title-img {
+    width: 70%;
+    transform: rotate(25deg);
+    position:relative;
+    z-index: 0;
+
+}
+
+/* Features Section */
+
+#features {
+    background-color: white;
+    position:relative;
+    /* z-index: 1; */
+}
+
+.features-container {
+    padding: 7% 15%;
+}
+
+.features-item {
+    text-align: center;
+    margin: 1.5rem 0;
+    padding: 0 1.5rem;
+}
+
+.i-features {
+    color:#ff4c68;
+    margin-bottom: 15px;
+    
+}
+
+
+.i-features:hover {
+    color:#ff90a0;
+}
+
+
+/* Testimonials Section */
+
+#testimonials {
+    background-color:#ff4c68;
+    padding: 7% 15%;
+    text-align: center;
+    color: white;
+}
+
+.testimonial-img {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+
+.carousel-item {
+    padding: 0 20% 0 20%;
+ }
+
+
+
+ /* Press Section */
+
+ #press {
+    padding: 7% 15%;
+ }
+
+ .press-img {
+     width: 150px;
+ }
+
+ .press-item {
+     margin: 1rem 0;
+     text-align:center;
+ }
+
+
+ /* Pricing Section */
+
+ #pricing {
+    background-color: #ff4c68;
+    color: white;
+    padding: 7% 15%;
+ }
+
+ .pricing-heading {
+     text-align: center;
+ }
+
+ .card {
+     background-color:#ff4c68;
+
+ }
+
+ /* .card-header {
+     background-color: #ff4c68;
+ } */
+
+ #my-0 {
+     color:#ff4c68;
+ }
+
+ /* CTA */
+
+ #cta {
+    background-color: white;
+    padding: 15% 15%;
+    text-align: center;
+    color:#ff4c68;
+ }
+
+
+ /* Footer */
+
+ #footer {
+    background-color:#ff4c68;
+    padding: 5%;
+    text-align: center;
+    color:white;
+ }
+
+.icon-wrapper {
+    text-align: center;
+}
+
+.footer-i {
+    width:auto;
+}
+
+ #footer p {
+    color:white;
+ }
+
+
+
+/* Media Queries */
+
+
+@media (max-width: 990px) {
+    #title {
+        background-color: #ff4c68;
+        color: white;
+        padding: 0;
+        max-height: 900px;
+    }
+
+    .title-img {
+        width: 50%;
+        transform: rotate(0deg);
+        position:static;
+        z-index: 0;
+    
+    }
+}
+
+
+
+@media (max-width: 410px) {
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 1.25;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 1.5rem;
+        line-height: 1.25;
+    }
+
+    .hero-btn {
+        margin: 0.5rem 0.25rem;
+    }
+
+}
